@@ -27,13 +27,18 @@ section.tertiary {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
 .grid {
   display: grid;
   grid-gap: 64px;
+}
+
+.grid2 {
+  display: grid;
+  grid-gap: 42px;
 }
 
 .grid-2-columns {
@@ -105,6 +110,58 @@ h3 {
   font-weight: 600;
   color: var(--branding-color);
   margin: 30px 0 20px 0;
+}
+
+.cards {
+  margin-top: 40px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--muted-color);
+  border-radius: 10px;
+  padding: 20px 20px 5px 20px;
+  border-radius: 10px;
+}
+.card h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+  margin: 20px 0 10px 0;
+}
+
+.card p {
+  text-align: left;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0 0px 0;
+  margin-top: 30px;
+  border-top: 1px solid var(--muted-color);
+}
+
+.card-footer-btn {
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.card-footer-btn a {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.5;
+  text-align: center;
+  color: white;
+  padding: 16px 32px;
+  margin-top: 20px;
+  display: inline-block;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: capitalised;
+  background: var(--branding-color);
+  border-radius: 20px;
 }
 
 h4 {
