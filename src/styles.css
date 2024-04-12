@@ -127,7 +127,7 @@ h3 {
   font-size: 32px;
   font-weight: 700;
   color: black;
-  margin: 20px 0 10px 0;
+  margin: 20px 0 0px 0;
 }
 
 .card p {
@@ -145,7 +145,6 @@ h3 {
 
 .card-footer-btn {
   margin: 0 auto;
-  margin-bottom: 10px;
 }
 
 .card-footer-btn a {
@@ -155,7 +154,7 @@ h3 {
   text-align: center;
   color: white;
   padding: 16px 32px;
-  margin-top: 20px;
+
   display: inline-block;
   letter-spacing: 3px;
   text-decoration: none;
@@ -224,7 +223,7 @@ section a {
   text-align: center;
   color: white;
   padding: 16px 48px;
-  margin-top: 20px;
+
   display: inline-block;
   text-transform: capitalize;
   border-color: var(--muted-color);
@@ -241,7 +240,7 @@ section a.btn-secondary {
   text-align: center;
   color: var(--muted-color);
   padding: 16px 48px;
-  margin-top: 20px;
+
   display: inline-block;
   text-transform: capitalize;
   border-color: var(--muted-color);
