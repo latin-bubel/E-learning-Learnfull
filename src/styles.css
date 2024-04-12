@@ -274,3 +274,47 @@ section a.btn-secondary {
 .colored {
   color: var(--branding-color);
 }
+.accordion-whole {
+  margin-top: 60px;
+}
+
+.accordion-wrapper {
+  padding-top: 20px;
+}
+
+label {
+  display: block;
+  padding: 8px 22px;
+  margin: 0 0 1px 0;
+  cursor: pointer;
+  border-bottom: 1px solid var(--muted-color);
+  margin: 20px;
+  color: var(--font-color-basic);
+  font-family: var(--default-font-family);
+  font-size: 24px;
+  font-weight: 500;
+  transition: all 0.5s ease-out;
+}
+
+label:hover {
+  background: var(--muted-color);
+  color: white;
+}
+
+.content {
+  padding: 10px 25px;
+
+  margin: 0 0 1px 0;
+}
+
+input + .content {
+  display: none;
+}
+
+input:checked + .content {
+  display: block;
+}
+
+input {
+  display: none;
+}
