@@ -39,12 +39,20 @@ section.tertiary {
   grid-template-columns: 1fr 1fr;
 }
 
+.grid-4-columns {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .img-responsive {
   max-width: 100%;
 }
 
 .center {
   margin: auto;
+}
+
+.align-text {
+  text-align: center;
 }
 
 header {
@@ -56,6 +64,7 @@ header {
 h1,
 h2,
 h3,
+h4,
 p,
 a {
   font-family: var(--default-font-family);
@@ -77,7 +86,7 @@ h3 {
   margin: 30px 0 20px 0;
 }
 
-p {
+header p {
   font-size: 24px;
   font-weight: 500;
   color: var(--font-color-basic);
@@ -99,6 +108,22 @@ header a {
   text-transform: uppercase;
   background: var(--branding-color);
   border-radius: 20px;
+}
+
+h4 {
+  font-size: 45px;
+  font-weight: 700;
+  color: var(--font-color-basic);
+  margin: 20px 0 20px 0;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--font-color-basic);
+  margin: 0px 0 20px 0;
+  line-height: 1.5;
 }
 
 .colored {
