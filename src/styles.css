@@ -14,7 +14,7 @@ body {
 section {
   max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 80px 0;
 }
 
 section.secondary {
@@ -294,7 +294,7 @@ input[type="text"]:focus {
 .section-flex {
   display: flex;
   justify-content: flex-end;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 h4 {
@@ -365,6 +365,11 @@ section a {
   background: var(--branding-color);
   border-radius: 30px;
   border: 2px solid var(--branding-color);
+  opacity: 0.7;
+}
+
+.section-btn:hover {
+  opacity: 1;
 }
 
 section a.btn-secondary {
@@ -381,6 +386,12 @@ section a.btn-secondary {
   background: none;
   border-radius: 30px;
   border: 2px solid var(--muted-color);
+}
+
+#arrow {
+  font-size: 24px;
+  opacity: 0.7;
+  color: var(--branding-color);
 }
 
 .colored {
