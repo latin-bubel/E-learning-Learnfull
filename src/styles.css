@@ -353,7 +353,7 @@ input {
   outline: 1px solid var(--muted-color);
 }
 
-.form_button {
+#form-container .form_button {
   background: var(--branding-color);
   padding: 10px;
   border: none;
@@ -364,7 +364,7 @@ input {
   color: white;
 }
 
-.form_button:hover {
+#form-container .form_button:hover {
   background: none;
   padding: 10px;
   border: none;
@@ -471,4 +471,23 @@ i {
 i:hover {
   opacity: 1;
   cursor: pointer;
+}
+
+#buttonContainer button {
+  display: block;
+  margin: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  border-radius: 30px;
+  font-size: 22px;
+  font-family: var(--default-font-family);
+}
+
+#buttonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
