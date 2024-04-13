@@ -404,3 +404,14 @@ footer li {
 .inline-links .copyright {
   margin-right: 10px;
 }
+
+i {
+  font-size: 32px;
+  margin: 30px 20px 0 0;
+  opacity: 0.7;
+}
+
+i:hover {
+  opacity: 1;
+  cursor: pointer;
+}
