@@ -122,6 +122,15 @@ h3 {
   justify-content: space-between;
   align-items: center;
   color: var(--footer-one-color);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.navbar-background {
+  position: sticky;
+  top: 0;
+  background-color: var(--section-color);
+  z-index: 1000;
 }
 
 .logo {
@@ -131,35 +140,45 @@ h3 {
 }
 
 .search-form {
+  position: relative;
   display: flex;
   align-items: center;
 }
 
 .search-form input {
-  padding: 10px 20px 10px 15px;
+  padding: 10px 60px 10px 15px;
   border-radius: 20px;
   border: 1px solid var(--section-color);
-  display: inline;
   font-size: 16px;
   font-family: var(--default-font-family);
+  width: 100%;
+  display: flex;
 }
 
 .search-form button {
-  padding: 10px 20px 10px 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 30px 10px 30px;
   border: none;
-  border-radius: 20px;
+  border-radius: 20px 20px 20px 20px;
   background-color: var(--branding-color);
   color: white;
   cursor: pointer;
-  margin-left: 10px;
   font-size: 16px;
   font-family: var(--default-font-family);
-  text-align: center;
 }
 
 .search-form button:hover {
   background-color: white;
   color: var(--branding-color);
+}
+
+.nav-items,
+.nav-buttons,
+.search-container {
+  margin-left: 0 auto;
 }
 
 .nav-items span {
