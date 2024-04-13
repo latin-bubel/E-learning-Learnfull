@@ -113,6 +113,53 @@ h3 {
   margin: 30px 0 20px 0;
 }
 
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: var(--section-color);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--footer-one-color);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: var(--default-font-family);
+}
+
+.nav-items span {
+  margin-right: 20px;
+  font-family: var(--default-font-family);
+  font-size: 18px;
+}
+
+.navbar .nav-buttons button {
+  background: var(--branding-color);
+  padding: 10px;
+  border: none;
+  width: 120px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 18px;
+  color: white;
+}
+
+.navbar .nav-buttons button:hover {
+  background: none;
+  padding: 10px;
+  border: none;
+  width: 120px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 18px;
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  cursor: pointer;
+}
+
 .cards {
   margin-top: 40px;
 }
@@ -484,6 +531,16 @@ i:hover {
   border-radius: 30px;
   font-size: 22px;
   font-family: var(--default-font-family);
+  animation: moveUpDown 2s infinite alternate;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
 
 #buttonContainer {
