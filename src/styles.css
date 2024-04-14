@@ -663,3 +663,24 @@ i:hover {
   color: rgb(255, 255, 255);
   background-color: var(--branding-color);
 }
+
+.trivia-button {
+  background: none;
+  padding: 20px 20px 20px 20px;
+  border: none;
+  width: 100px;
+  height: 80px;
+  border-radius: 30px;
+  font-size: 18px;
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  cursor: pointer;
+  text-align: center;
+}
+
+.trivia-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+}
