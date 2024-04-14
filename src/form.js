@@ -27,7 +27,7 @@ const questions = [
   },
 ];
 const NUMBER_OF_OPTIONS = 4;
-const QUESTION_NUMBER = 0;
+var QUESTION_NUMBER = 0;
 var SELECTED_OPTION_ID = "";
 // Function to handle click on answer form and change style property when chosen
 function selectOption(selectedOption) {
@@ -89,4 +89,27 @@ function color_green(option) {
 
 function color_red(option) {
   option.style.background = "red";
+}
+
+function proceed() {
+  var allOptions = document.querySelectorAll(".anwerForm");
+  allOptions.forEach(function (option) {
+    option.style.fontWeight = "500";
+    option.style.border = "1px solid var(--muted-color)";
+    option.style.color = "black";
+    option.style.background = "transparent";
+  });
+
+  QUESTION_NUMBER++;
+  if (QUESTION_NUMBER >= questions.length) {
+    window.location.href = "index.html";
+  }
+
+  var b = document.getElementById("triviaQuestion");
+  b.innerText = questions[QUESTION_NUMBER].question;
+
+  for (let i = 1; i <= NUMBER_OF_OPTIONS; i++) {
+    const a = document.getElementById("answer" + i);
+    a.innerText = questions[QUESTION_NUMBER].options[i - 1];
+  }
 }
