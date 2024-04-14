@@ -25,3 +25,17 @@ document.addEventListener("DOMContentLoaded", function () {
     buttonContainer.appendChild(button);
   });
 });
+
+// Function to handle click on answer form and change style property when chosen
+function selectOption(selectedOption) {
+  var allOptions = document.querySelectorAll(".anwerForm");
+  allOptions.forEach(function (option) {
+    option.style.fontWeight = "500";
+    option.style.border = "1px solid var(--muted-color)";
+    option.style.color = "black";
+  });
+
+  selectedOption.style.fontWeight = "700";
+  selectedOption.style.border = "3px solid var(--branding-color)";
+  selectedOption.style.color = "var(--branding-color)";
+}

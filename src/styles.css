@@ -648,10 +648,11 @@ i:hover {
 
 .anwerForm {
   display: block;
-  padding: 8px 22px;
-  margin: 0 20px 20px 0;
+  padding: 15px 22px;
+  margin: 20px 20px 20px 0;
   cursor: pointer;
-  border-bottom: 1px solid var(--muted-color);
+  border: 1px solid var(--muted-color);
+  border-radius: 30px;
   margin: 20px;
   color: black;
   font-family: var(--default-font-family);
