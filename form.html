@@ -20,28 +20,34 @@
     <div class="navbar-background">
         <div class="navbar">
             <div class="logo">LearnFull</div>
-            <div class="search-container">
-                <div class="search-form">
-                    <input type="text" placeholder="Search course">
-                    <button>Search</button>
-                </div>
-            </div>
+
             <div class="justify-right">
-                <div class="nav-items">
-                    <span>Learning Paths</span>
-                    <span>Community</span>
-                    <span>Reviews</span>
-                </div>
+
                 <div class="nav-buttons">
-                    <button>Login</button>
-                    <button>Sign Up</button>
+                    <button>Profile</button>
                 </div>
             </div>
         </div>
     </div>
 
     <main>
+        <div class="lesson-wrapper container">
 
+            <div class="inline-links">
+                <p>Dashboard ></p>
+                <p> <b>&nbsp Mathematical Trivia</b></p>
+            </div>
+
+            <div class="trivia-wrapper">
+                <h3 id="triviaQuestion">What is the question?</h3>
+                <form id="optionsForm">
+                    <div class="anwerForm" onclick="selectOption('answer1')">answer</div>
+                    <div class="anwerForm" onclick="selectOption('answer2')">answer</div>
+                    <div class="anwerForm" onclick="selectOption('answer3')">answer</div>
+                    <div class="anwerForm" onclick="selectOption('answer4')">answer</div>
+                </form>
+            </div>
+        </div>
     </main>
     <footer>
         <section class="tertiary">

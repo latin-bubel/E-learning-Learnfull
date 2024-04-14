@@ -200,18 +200,6 @@ input[type="text"]:focus {
 }
 
 .navbar .nav-buttons button {
-  background: var(--branding-color);
-  padding: 10px;
-  border: none;
-  width: 100px;
-  height: 46.8px;
-  border-radius: 30px;
-  font-size: 18px;
-  color: white;
-  font-family: var(--default-font-family);
-}
-
-.navbar .nav-buttons button:hover {
   background: none;
   padding: 10px;
   border: none;
@@ -222,6 +210,18 @@ input[type="text"]:focus {
   color: var(--branding-color);
   border: 1px solid var(--branding-color);
   cursor: pointer;
+}
+
+.navbar .nav-buttons button:hover {
+  background: var(--branding-color);
+  padding: 10px;
+  border: none;
+  width: 100px;
+  height: 46.8px;
+  border-radius: 30px;
+  font-size: 18px;
+  color: white;
+  font-family: var(--default-font-family);
 }
 
 .cards {
@@ -549,7 +549,7 @@ footer li {
 .footer-underlink {
   font-weight: 500;
   line-height: 3;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   color: white;
   padding: 0px;
@@ -626,4 +626,40 @@ i:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.lesson-wrapper {
+  margin-top: 20px;
+}
+
+.trivia-wrapper {
+  max-width: 80%;
+  margin: 30px auto;
+}
+
+#triviaQuestion {
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+  margin: 20px 0 0px 0;
+  display: block;
+  text-align: center;
+}
+
+.anwerForm {
+  display: block;
+  padding: 8px 22px;
+  margin: 0 20px 20px 0;
+  cursor: pointer;
+  border-bottom: 1px solid var(--muted-color);
+  margin: 20px;
+  color: black;
+  font-family: var(--default-font-family);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.anwerForm:hover {
+  color: rgb(255, 255, 255);
+  background-color: var(--branding-color);
 }
