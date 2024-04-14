@@ -658,6 +658,7 @@ i:hover {
   font-family: var(--default-font-family);
   font-size: 24px;
   font-weight: 500;
+  background: none;
 }
 
 .anwerForm:hover {

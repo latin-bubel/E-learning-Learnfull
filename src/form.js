@@ -61,3 +61,19 @@ function displayQuestion(questionIndex) {
     a.innerText = questions[questionIndex].options[i - 1];
   }
 }
+
+function checkAnswer() {
+  if (SELECTED_OPTION_ID == "") {
+    return;
+  }
+  o = document.getElementById(SELECTED_OPTION_ID);
+  user_answer = o.innerText;
+  answer = questions[QUESTION_NUMBER].answer;
+  if (user_answer == answer) {
+    color_green(o);
+  }
+}
+
+function color_green(option) {
+  option.style.background = "green";
+}
