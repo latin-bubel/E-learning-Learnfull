@@ -765,6 +765,11 @@ i:hover {
   text-align: center;
 }
 
+.smaller {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
 @media (max-width: 960px) {
   header {
     padding: 0px;
@@ -798,5 +803,24 @@ i:hover {
     grid-template-columns: 1fr 1fr 3fr;
     display: flex;
     justify-content: space-between;
+  }
+
+  .trivia-buttons {
+    width: 80%;
+  }
+
+  .trivia-button {
+    background: none;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    width: 100px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 18px;
+    color: var(--branding-color);
+    border: 1px solid var(--branding-color);
+    cursor: pointer;
+    text-align: center;
+    font-weight: 500;
   }
 }
