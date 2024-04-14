@@ -764,3 +764,39 @@ i:hover {
   cursor: pointer;
   text-align: center;
 }
+
+@media (max-width: 960px) {
+  header {
+    padding: 0px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  .hidden-smaller {
+    display: none;
+  }
+
+  .grid-2-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  .section {
+    padding: 20px;
+  }
+
+  footer .grid-3-columns {
+    grid-template-columns: 1fr 1fr 3fr;
+    display: flex;
+    justify-content: space-between;
+  }
+}
