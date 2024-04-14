@@ -27,6 +27,8 @@ const questions = [
   },
 ];
 const NUMBER_OF_OPTIONS = 4;
+const QUESTION_NUMBER = 0;
+var SELECTED_OPTION_ID = "";
 // Function to handle click on answer form and change style property when chosen
 function selectOption(selectedOption) {
   var allOptions = document.querySelectorAll(".anwerForm");
@@ -39,6 +41,7 @@ function selectOption(selectedOption) {
   selectedOption.style.fontWeight = "700";
   selectedOption.style.border = "3px solid var(--branding-color)";
   selectedOption.style.color = "var(--branding-color)";
+  SELECTED_OPTION_ID = selectedOption.id;
 }
 
 //Function to update questions and answers inside the form with the q&a from the object
