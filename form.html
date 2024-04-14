@@ -35,7 +35,7 @@
 
             <div class="inline-links">
                 <p>Dashboard ></p>
-                <p> <b>&nbsp Mathematical Trivia</b></p>
+                <p> <b>&nbsp Trivia</b></p>
             </div>
 
             <div class="trivia-wrapper">
@@ -51,11 +51,14 @@
                     <button class="next-button" onclick="checkAnswer()">Show answer</button>
 
                 </div>
-                <div class="trivia-buttons">
-                    <button class="trivia-button">Hard</button>
-                    <button class="trivia-button">Medium</button>
-                    <button class="trivia-button">Easy</button>
-                    <button class="trivia-button" onclick="proceed()">Trivial</button>
+                <div>
+                    <p id="evaluateQuestion">How challenging is this question?</p>
+                    <div class="trivia-buttons">
+                        <button class="trivia-button" onclick="proceed()">Hard</button>
+                        <button class="trivia-button" onclick="proceed()">Medium</button>
+                        <button class="trivia-button" onclick="proceed()">Easy</button>
+                        <button class="trivia-button" onclick="proceed()">Trivial</button>
+                    </div>
                 </div>
             </div>
         </div>

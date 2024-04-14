@@ -6,9 +6,9 @@ const questions = [
     answer: "8",
   },
   {
-    question: "What is 10 - 2?",
-    options: ["6", "7", "8", "9"],
-    answer: "8",
+    question: "What is the capital of France?",
+    options: ["London", "Paris", "Rome", "Berlin"],
+    answer: "Paris",
   },
   {
     question: "What is the largest planet in our solar system?",
@@ -84,11 +84,15 @@ function checkAnswer() {
 }
 
 function color_green(option) {
-  option.style.background = "green";
+  option.style.background = "#007749";
+  option.style.color = "white";
+  option.style.border = "1px solid #007749";
 }
 
 function color_red(option) {
-  option.style.background = "red";
+  option.style.background = "#BB0C0C";
+  option.style.color = "white";
+  option.style.border = "1px solid #BB0C0C";
 }
 
 function proceed() {

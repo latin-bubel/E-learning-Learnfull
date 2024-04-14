@@ -5,6 +5,7 @@
   --footer-one-color: #212121;
   --font-color-basic: black;
   --muted-color: #515151;
+  --highlited-color: #802a00;
 }
 
 body {
@@ -666,11 +667,18 @@ i:hover {
   background-color: var(--branding-color);
 }
 
+#evaluateQuestion {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 0.8;
+}
+
 .trivia-button {
   background: none;
   padding: 20px 20px 20px 20px;
   border: none;
-  width: 100px;
+  width: 120px;
   height: 80px;
   border-radius: 30px;
   font-size: 18px;
@@ -678,13 +686,29 @@ i:hover {
   border: 1px solid var(--branding-color);
   cursor: pointer;
   text-align: center;
+  font-weight: 500;
+}
+
+.trivia-button:hover {
+  background: var(--branding-color);
+  padding: 20px 20px 20px 20px;
+  border: none;
+  width: 120px;
+  height: 80px;
+  border-radius: 30px;
+  font-size: 18px;
+  color: white;
+  border: 1px solid var(--branding-color);
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
 }
 
 .trivia-buttons {
   display: flex;
   justify-content: space-between;
   width: 60%;
-  margin: 60px auto;
+  margin: 10px auto;
 }
 
 .primary-buttons {
@@ -710,6 +734,20 @@ i:hover {
 
 .next-button {
   background: var(--branding-color);
+  padding: 5px;
+  border: none;
+  width: 150px;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 18px;
+  color: white;
+  border: 1px solid var(--branding-color);
+  cursor: pointer;
+  text-align: center;
+}
+
+.next-button:hover {
+  background: var(--highlited-color);
   padding: 5px;
   border: none;
   width: 150px;
