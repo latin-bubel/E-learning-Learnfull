@@ -62,6 +62,7 @@ function displayQuestion(questionIndex) {
   }
 }
 
+//Function to check answer and color green when correct and if incorrect color answer red and show the correct answer by coloring it green
 function checkAnswer() {
   if (SELECTED_OPTION_ID == "") {
     return;
@@ -95,6 +96,7 @@ function color_red(option) {
   option.style.border = "1px solid #BB0C0C";
 }
 
+//Function to proceed with next question when choosing question difficulty, when looped by all questions - return to index.html
 function proceed() {
   var allOptions = document.querySelectorAll(".anwerForm");
   allOptions.forEach(function (option) {
