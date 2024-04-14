@@ -72,8 +72,21 @@ function checkAnswer() {
   if (user_answer == answer) {
     color_green(o);
   }
+
+  color_red(o);
+  for (let i = 1; i <= NUMBER_OF_OPTIONS; i++) {
+    const a = document.getElementById("answer" + i);
+    if (a.innerText == questions[QUESTION_NUMBER].answer) {
+      color_green(a);
+      break;
+    }
+  }
 }
 
 function color_green(option) {
   option.style.background = "green";
+}
+
+function color_red(option) {
+  option.style.background = "red";
 }
